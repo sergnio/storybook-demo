@@ -4,6 +4,13 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+### Create a repo like this
+```
+npm uninstall -g create-react-app
+npx create-react-app storybook-demo --template typescript
+npx -p @storybook/cli sb init --type react_scripts
+```
+
 ### `npm start`
 
 Runs the app in the development mode.<br />
