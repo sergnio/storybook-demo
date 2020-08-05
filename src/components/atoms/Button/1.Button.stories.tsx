@@ -14,15 +14,18 @@ export const withProps = () => (
     <Button>Simple Button!</Button>
 );
 
-// 2
-export const defaultButton = () =>
-    <Button
-        onClick={action('Clicked!')}
-    >
-        Learn more
-    </Button>
+export const withColor = () =>
+    <Button color="primary">Learn more</Button>
 
 // 3
+export const defaultButton = () =>
+    <Button color="primary"
+        onClick={action('Clicked!')}
+    >
+        Please click me
+    </Button>
+
+// 4
 const label = 'Colors';
 const options = {
     Red: 'red',
