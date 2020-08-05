@@ -5,50 +5,40 @@ import Button from "./Button";
 
 export default {
     title: "Atoms/Button",
+    // 3
     decorators: [withKnobs]
 };
 
+// 1
 export const withProps = () => (
     <Button>Simple Button!</Button>
 );
 
-export const defaultButton = () => <Button onClick={action('clicked')}>Learn more</Button>
-// 'text' | 'outlined' | 'contained'
+// 2
+export const defaultButton = () =>
+    <Button
+        onClick={action('Clicked!')}
+    >
+        Learn more
+    </Button>
+
+// 3
 const label = 'Colors';
 const options = {
     Red: 'red',
     Blue: 'blue',
     Yellow: 'yellow',
+    Orange: 'orange',
+    Pink: 'pink',
     None: null,
 };
 const defaultValue = 'red';
 
 export const usingKnobs = () =>
-<Button color={select(label, options, defaultValue)}>{text("Button Label", "Hello Storybook!")}</Button>
-
-
-// .add('default - small', () => (
-//     <Button size={ButtonSize.SMALL} onClick={action('clicked')}>
-//         Learn more
-//     </Button>
-// ))
-// .add('default - medium', () => (
-//     <Button size={ButtonSize.MEDIUM} onClick={action('clicked')}>
-//         Learn more
-//     </Button>
-// ))
-// .add('default - large', () => (
-//     <Button size={ButtonSize.LARGE} onClick={action('clicked')}>
-//         Learn more
-//     </Button>
-// ))
-// .add('rounded', () => (
-//     <Button theme={ButtonTheme.ROUNDED} onClick={action('clicked')}>
-//         Learn more
-//     </Button>
-// ))
-// .add('disabled', () => (
-//     <Button theme={ButtonTheme.ROUNDED} disabled onClick={action('clicked')}>
-//         Learn more
-//     </Button>
-// ))
+    <Button
+        background={select(label, options, defaultValue)}
+    >
+        {
+            text("Button Label", "Hello Storybook!")
+        }
+    </Button>

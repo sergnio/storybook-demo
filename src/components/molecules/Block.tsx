@@ -1,6 +1,7 @@
 import * as React from 'react'
 import Card from '@material-ui/core/Card/Card'
 import Button from "../atoms/Button/Button";
+import Subtitle from "../atoms/Subtitle";
 
 type Props = {
     children?: any,
@@ -11,9 +12,12 @@ type Props = {
 
 const Block = (props: Props) => (
     <Card style={{padding: "1em"}}>
-        <h3>{props.title}</h3>
-        {props.children}
-        {props.button !== '' && <Button>{props.button}</Button>}
+        <Subtitle>{props.title}</Subtitle>
+        <div style={{
+            fontSize: "1.5em",
+            color: "rgba(0,0,0,0.46)"
+        }}>{props.children}</div>
+        {props.button !== '' && <Button color="primary">{props.button}</Button>}
     </Card>
 )
 
