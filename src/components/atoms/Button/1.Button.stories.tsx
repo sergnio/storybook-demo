@@ -10,15 +10,18 @@ export default {
 };
 
 // 1
-export const withProps = () => (
-    <Button>Simple Button!</Button>
-);
+export function simpleButton() {
+    return (
+        <Button>Simple Button!</Button>
+    );
+}
 
-export const withColor = () =>
-    <Button color="primary">Learn more</Button>
+export function withColor() {
+    return <Button color="primary">Learn more</Button>
+}
 
 // 3
-export const defaultButton = () =>
+export const clickHandler = () =>
     <Button color="primary"
         onClick={action('Clicked!')}
     >
@@ -30,10 +33,7 @@ const label = 'Colors';
 const options = {
     Red: 'red',
     Blue: 'blue',
-    Yellow: 'yellow',
-    Orange: 'orange',
     Pink: 'pink',
-    None: null,
 };
 const defaultValue = 'red';
 
@@ -45,3 +45,4 @@ export const usingKnobs = () =>
             text("Button Label", "Hello Storybook!")
         }
     </Button>
+
