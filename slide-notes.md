@@ -1,7 +1,8 @@
 ## Intro
 
 - thanks for coming, my name sergio
-- I know I'm the last one, some of you tired with your eyes glued to the screen
+- we're gonna finish strong today because I know I'm the last one. 
+- some of you tired with your eyes glued to the screen so
 - Please join me in 10+ second stretch break or don't I can't tell you what to do
   - stand up, get the blood flowing
   - I look dorky, hopefully some of you are doing it with me
