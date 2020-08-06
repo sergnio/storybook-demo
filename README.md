@@ -10,6 +10,8 @@ npm uninstall -g create-react-app
 npx create-react-app storybook-demo --template typescript
 npx -p @storybook/cli sb init --type react_scripts
 ```
+### `npm run storybook`
+Runs Storybook. Storybook will look for components with the `*.stories*` tag.
 
 ### `npm start`
 
