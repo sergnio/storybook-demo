@@ -69,6 +69,10 @@
 
 - it's not always nice
 
+## Dance break!
+- no polls, this is just one of my favorite gifs of all time
+- let's be honest, long time without a cute animal break.
+
 ## react
 
 - that was js, that was ts, high level of react
