@@ -12,6 +12,7 @@ npx -p @storybook/cli sb init --type react_scripts
 ```
 ### `npm run storybook`
 Runs Storybook. Storybook will look for components with the `*.stories*` tag.
+See more at [the Storybook website](https://storybook.js.org/)
 
 ### `npm start`
 
