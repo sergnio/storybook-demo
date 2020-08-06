@@ -1,39 +1,42 @@
 import React from "react";
-import {action} from "@storybook/addon-actions";
-import {withKnobs, text, select} from "@storybook/addon-knobs";
 import Button from "./Button";
+import {action} from "@storybook/addon-actions";
+import {select, text, withKnobs} from "@storybook/addon-knobs";
 
 export default {
     title: "Atoms/Button",
-    // 3
     decorators: [withKnobs]
-};
-
-// 1
-export function simpleButton() {
-    return (
-        <Button>Simple Button!</Button>
-    );
 }
 
+
+// Simple Button
+export function simpleButton() {
+    return (
+        <Button>Simple Button</Button>
+    )
+}
+
+// Button with Color
 export function withColor() {
     return <Button color="primary">Learn more</Button>
 }
 
-// 3
+// Button w/ click handler
 export const clickHandler = () =>
-    <Button color="primary"
+    <Button
+        color="primary"
         onClick={action('Clicked!')}
-    >
-        Please click me
-    </Button>
+    >Click!</Button>
 
-// 4
+// Button with color knob
 const label = 'Colors';
 const options = {
     Red: 'red',
     Blue: 'blue',
     Pink: 'pink',
+    Orange: 'orange',
+    Black: 'black',
+    White: 'white'
 };
 const defaultValue = 'red';
 
@@ -41,8 +44,6 @@ export const usingKnobs = () =>
     <Button
         background={select(label, options, defaultValue)}
     >
-        {
-            text("Button Label", "Hello Storybook!")
-        }
+        {/* Button with text knob */}
+        { text("button label", "hello!")}
     </Button>
-
