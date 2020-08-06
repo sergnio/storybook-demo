@@ -9,6 +9,7 @@
 ## Cute animals!
 
 - so I've come prepared
+- power of kawaii - operation
 
 ## Why are you here?
 - if doesnt apply to you then you don't have to be here
