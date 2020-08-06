@@ -1,20 +1,3 @@
-glimpse
-clean code and how it relates to story book / atomic design
-
-react js transition
-
-show the button on react js / 101
-
-why are you here?
-if doesnt appeal to you then maybe you shouldnt be here
-or maybe you know someone who would love to be here (invite them, its not too late)
-
-end of storybook demo
-show other things like docs (canvas) screenshot
-
-how can oyu start today
-show commands
-
 ## Intro
 
 - thanks for coming, my name sergio
@@ -28,6 +11,9 @@ show commands
 - so I've come prepared
 
 ## Why are you here?
+- if doesnt apply to you then you don't have to be here
+- or maybe you know someone who would love to be here (invite them, its not too late)
+  - but not in like a passive aggressive way
 
 ## what lvl are you?
 
